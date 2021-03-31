@@ -8,7 +8,7 @@ const app = express();
 
 app.use(express.json());
 
-mongoose.connect('mongodb://localhost/letsgoinovacao-tk', {
+mongoose.connect('mongodb://letsgoinovacao:82ZWR3_hzFe.@mongo_letsgoinovacao:27017/letsgoinovacao', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 }).then(() => {
@@ -41,7 +41,12 @@ app.post("/artigo", (req, res) => {
         })
     });
 });
+var express = require('express');
+var app = express();
 
-app.listen(8080, () =>{
-    console.log("Servidor iniciado na porta 8080: http://localhost:8080/");
+//... your code here ...
+                                
+var port = process.env.PORT || 3000;
+app.listen(port, function () {
+    console.log('Servidor iniciado na porta', port);
 });
