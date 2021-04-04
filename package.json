@@ -12,6 +12,8 @@
     "check-node-version": "^2.1.0",
     "cluster": "^0.7.7",
     "express": "^4.15.2",
+    "mongodb": "3.6.5",
+    "mongoose": "5.12.3",
     "os": "^0.1.1"
   }
 }
