@@ -41,7 +41,6 @@ app.post("/artigo", (req, res) => {
         })
     });
 });
-var app = express();
 app.use((req, res, next) => { //Cria um middleware onde todas as requests passam por ele 
     if ((req.headers["x-forwarded-proto"] || "").endsWith("http")) //Checa se o protocolo informado nos headers é HTTP 
         res.redirect(`https://${req.headers.host}${req.url}`); //Redireciona pra HTTPS 
